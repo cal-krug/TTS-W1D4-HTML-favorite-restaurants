@@ -7,20 +7,87 @@
 		<title>Cal's Top 5 Grubbin' Places</title>
 	</head>
 	<body>
-		<h1>Cal's Top 5 Grubbin' Places</h1>
-		<p>This site is about recording my favorite places to eat! I swear, I'm not fat.</p>
-		<h2>Here's the list, baby, here's the list!</h2>
-		<ol>
-			<li><a href="https://www.rayspizzaria.com/">Ray's Pizzaria</a></li>
-			<img src="https://menufyproduction.imgix.net/637560120408363568+450862.png?auto=compress,format&fit=max&w=1024&h=1024" width="50">
-			<li><a href="https://starwars.fandom.com/wiki/Dex%27s_Diner">Dex's Diner</a></li>
-			<img src="https://static.wikia.nocookie.net/starwars/images/f/fd/Dexs_Diner.jpg/revision/latest/scale-to-width-down/1000?cb=20111210211932" width="50">
-			<li><a href="https://www.tacocabana.com/">Taco Cabana</a></li>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Taco_Cabana_logo.svg/287px-Taco_Cabana_logo.svg.png" width="50">
-			<li><a href="https://i.kym-cdn.com/entries/icons/original/000/023/673/Sneed's_Feed_and_Seed_Banner.jpg">Sneed's Seed and Feed</a></li>
-			<img src="https://i.kym-cdn.com/entries/icons/original/000/023/673/Sneed's_Feed_and_Seed_Banner.jpg" width="50">
-			<li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Breadbox.jpg/1280px-Breadbox.jpg">The Bread Box</a></li>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Breadbox.jpg/1280px-Breadbox.jpg" width="50">
-		</ol>
+		<div id="restaurantList">
+			<h1>Cal's Top 5 Grubbin' Places</h1>
+			<p>This site is about recording my favorite places to eat! I swear, I'm not fat.</p>
+			<h2>Here's the list, baby, here's the list!</h2>
+			<ol>
+				<li><a href="https://www.rayspizzaria.com/">Ray's Pizzaria</a></li>
+				<img src="https://menufyproduction.imgix.net/637560120408363568+450862.png?auto=compress,format&fit=max&w=1024&h=1024" width="50">
+				<li><a href="https://starwars.fandom.com/wiki/Dex%27s_Diner">Dex's Diner</a></li>
+				<img src="https://static.wikia.nocookie.net/starwars/images/f/fd/Dexs_Diner.jpg/revision/latest/scale-to-width-down/1000?cb=20111210211932" width="50">
+				<li><a href="https://www.tacocabana.com/">Taco Cabana</a></li>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Taco_Cabana_logo.svg/287px-Taco_Cabana_logo.svg.png" width="50">
+				<li><a href="https://i.kym-cdn.com/entries/icons/original/000/023/673/Sneed's_Feed_and_Seed_Banner.jpg">Sneed's Seed and Feed</a></li>
+				<img src="https://i.kym-cdn.com/entries/icons/original/000/023/673/Sneed's_Feed_and_Seed_Banner.jpg" width="50">
+				<li><a href="my-kitchen.html">My own kitchen</a></li>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Breadbox.jpg/1280px-Breadbox.jpg" width="50">
+			</ol>
+		</div>
+
+		<h3>Rationale:</h3>
+		<div id="restaurantList-table">
+			<table>
+				<tr>
+					<th>Restaurant Name</th>
+					<th>Why I like it so much</th>
+				</tr>
+				<tr>
+					<td>Ray's Pizzaria</td>
+					<td>It's based and the pizza is actually good</td>
+				</tr>
+				<tr>
+					<td>Dex's Diner</td>
+					<td>Dexter is the friendliest Besalisk I know</td>
+				</tr>
+				<tr>
+					<td>Sneed's Seed & Feed</td>
+					<td>Best seeds that feed. Going vegan? Sneed.</td>
+				</tr>
+				<tr>
+					<td>My own kitchen</td>
+					<td>American Diet be like <i>mmm carbs, mmm</i> and I don't want to be part of that.</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<h4>Where do you wish to visit?</h4>
+		<form>
+			<label for="username">Username: </label>
+			<input type="text" id="username" name="username">
+			<br>
+			<div id="restaurantList-checkboxes">
+				<p><b>Select all that apply:</b></p>
+				<label for="rays-pizzaria"><b>Ray's</b> Pizzaria</label>
+				<input type="checkbox" id="rays-pizzaria" name="rays-pizzaria">
+				<br>
+				<label for="dexs-diner"><b>Dex's</b> Diner</label>
+				<input type="checkbox" id="dexs-diner" name="dexs-diner">
+				<br>
+				<label for="taco-cabana">Taco Cabana</label>
+				<input type="checkbox" id="taco-cabana" name="taco-cabana">
+				<br>
+				<label for="SSF"><b>Sneed's</b> Seed and Feed</label>
+				<input type="checkbox" id="SSF" name="SSF">
+				<br>
+				<label for="kitchen">Your own kitchen</label>
+				<input type="checkbox" id="kitchen" name="kitchen">
+				<br>
+			</div>
+			<label for="restaurant-type">What's your favorite type of restaurant?</label>
+			<select id="type" name="type">
+				<option value="American" selected><i>American</i> Quisine</option>
+				<option value="Asian"><i>Asian</i> Quisine</option>
+				<option value="Latino"><i>Latino</i> Quisine</option>
+			</select>
+			<br>
+			<textarea id="user-comment" name="user-comment" rows="2" cols="50">
+			Give me some more personal information for me to siphon from you :)
+			</textarea>
+			<br>
+			<input type=submit value="Surely! ;)">
+			<br>
+		</form>
 	</body>
 </html>
